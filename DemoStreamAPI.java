@@ -136,7 +136,7 @@ public class DemoStreamAPI {
             System.out.println();
         }
 
-        int countAge = (int) student.stream().filter(st -> (st.getAge() >= 20)).count();
+        int countAge = (int) student.stream().filter(st -> (st.getAge() > 20)).count();
 
         System.out.println("So sinh vien lon hon 20 tuoi la: " + countAge);
 
