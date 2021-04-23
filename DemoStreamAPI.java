@@ -5,124 +5,15 @@
  */
 package java8;
 
-<<<<<<< HEAD
-=======
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
->>>>>>> df7b862bc177fb53aeb78e617197e08dfd5434e9
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
-<<<<<<< HEAD
-=======
-import java.util.stream.Stream;
->>>>>>> df7b862bc177fb53aeb78e617197e08dfd5434e9
 
 /**
  *
  * @author quach
  */
-<<<<<<< HEAD
-=======
-class Student {
-
-    private int id;
-    private String name;
-    private int age;
-    private String gender;
-
-    public Student(int id, String name, int age, String gender) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-}
-
-class StudentDTO {
-
-    private int id;
-    private String name;
-    private int age;
-    private String gender;
-
-    public StudentDTO(int id, String name, int age, String gender) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-}
-
->>>>>>> df7b862bc177fb53aeb78e617197e08dfd5434e9
 public class DemoStreamAPI {
 
     public static void main(String[] args) throws Exception {
@@ -145,11 +36,7 @@ public class DemoStreamAPI {
             System.out.println();
         }
 
-<<<<<<< HEAD
         int countAge = (int) student.stream().filter(st -> (st.getAge() >= 20)).count();
-=======
-        int countAge = (int) student.stream().filter(st -> (st.getAge() > 20)).count();
->>>>>>> df7b862bc177fb53aeb78e617197e08dfd5434e9
 
         System.out.println("So sinh vien lon hon 20 tuoi la: " + countAge);
 
